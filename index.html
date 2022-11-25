@@ -5,7 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<!--     <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .bigbox{
+    margin: 20px;
+    padding: 10px;
+    
+    
+}
+.upbox{
+    padding: 10px;
+    text-align: left;
+    border: 10px solid grey;
+    height: 20vh;
+    
+}
+input{
+    height: 40px;
+    font-size: 20px;
+    width: 40%;
+}
+button{
+    height: 40px;
+    font-size: 20px;
+    width: 10%;
+}
+h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline;
+}
+.theme{
+    /* border: 4px solid black; */
+    padding: 10px;
+    margin: 10px;
+    /* display: flex; */
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+}
+:root {
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    background: var(--clr-body-bg);
+    color: var(--clr-text);
+  }
+  
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .color-picker > fieldset {
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    background: #fff;
+    padding: 1rem 3rem;
+    margin-inline: auto;
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  .color-picker input[type="radio"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+  }
+  
+  .color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+  }
+  
+  .color-picker input[type="radio"]#light {
+    --radio-color: gray;
+  }
+  .color-picker input[type="radio"]#pink {
+    --radio-color: pink;
+  }
+  .color-picker input[type="radio"]#blue {
+    --radio-color: blue;
+  }
+  .color-picker input[type="radio"]#green {
+    --radio-color: green;
+  }
+  .color-picker input[type="radio"]#dark {
+    --radio-color: #232323;
+  }
+  
+  .pink {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  .blue {
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-heading: hsl(209 50% 25%);
+  }
+  
+  .green {
+    --clr-body-bg: hsl(109 50% 90%);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+  }
+  
+  .dark {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }
+  
+  :root:has(#pink:checked) {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 100%);
+    --clr-text: hsl(310 50% 15%);
+    --clr-heading: hsl(310 50% 25%);
+  }
+  
+  :root:has(#blue:checked) {
+    --clr-body-bg: hsl(209 50% 90%);
+    --clr-card-bg: hsl(209 50% 100%);
+    --clr-text: hsl(209 50% 15%);
+    --clr-heading: hsl(209 50% 25%);
+  }
+  
+  :root:has(#green:checked) {
+    --clr-body-bg: rgb(9, 32, 4);
+    --clr-card-bg: hsl(109 50% 100%);
+    --clr-text: hsl(109 50% 15%);
+    --clr-heading: hsl(109 50% 25%);
+  }
+  
+  :root:has(#dark:checked) {
+    --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%);
+  }
+  
+  .pics{
+    border: 5px solid rgb(177, 177, 177);
+    width: 800px;
+    margin: auto;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-evenly; */
+    }
+    </style>
 </head>
 <body>
     <div class="bigbox">
